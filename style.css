@@ -9,3 +9,7 @@ h2 {
 h3 {
   font-weight: bold;
 }
+
+li {
+  word-spacing: -10px;
+}
