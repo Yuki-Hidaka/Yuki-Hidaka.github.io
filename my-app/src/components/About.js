@@ -47,6 +47,10 @@ const About = () => {
             name: 'Selenium',
             description: '学習中',
         },
+        {
+            name: 'Three.js',
+            description: '学習中',
+        },
     ];
 
     return (
