@@ -6,16 +6,16 @@ export function drawStarryNight(canvas) {
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x000000);
 
-    const sizes = {
-        width: window.innerWidth,
-        height: window.innerHeight,
-    };
+    // const sizes = {
+    //     width: window.innerWidth,
+    //     height: window.innerHeight,
+    // };
 
     const camera = new THREE.PerspectiveCamera(
-        75,
-        sizes.width / sizes.height,
-        0.1,
-        1000
+        // 75,
+        // sizes.width / sizes.height,
+        // 0.1,
+        // 1000
     );
 
     camera.position.set(1, 0, 3);
@@ -26,8 +26,8 @@ export function drawStarryNight(canvas) {
         alpha: true,
     });
 
-    renderer.setSize(sizes.width, sizes.height);
-    renderer.setPixelRatio(window.devicePixelRatio);
+    // renderer.setSize(sizes.width, sizes.height);
+    // renderer.setPixelRatio(window.devicePixelRatio);
 
     //
 
@@ -71,12 +71,12 @@ export function drawStarryNight(canvas) {
     animate();
 
     const onWindowResize = () => {
-        sizes.width = window.innerWidth;
-        sizes.height = window.innerHeight;
-        camera.aspect = sizes.width / sizes.height;
-        camera.updateProjectionMatrix();
-        renderer.setSize(sizes.width, sizes.height);
-        renderer.setPixelRatio(window.devicePixelRatio);
+        // sizes.width = window.innerWidth;
+        // sizes.height = window.innerHeight;
+        // camera.aspect = sizes.width / sizes.height;
+        // camera.updateProjectionMatrix();
+        // renderer.setSize(sizes.width, sizes.height);
+        // renderer.setPixelRatio(window.devicePixelRatio);
     };
     window.addEventListener("resize", onWindowResize);
 
