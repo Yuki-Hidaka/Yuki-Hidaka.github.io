@@ -5,6 +5,7 @@ import { drawBox } from "./drawBox";
 import { drawSpinningCube } from "./drawSpinningCube";
 import { drawStarryNight } from "./drawStarryNight";
 import { drawFireWorks } from "./drawFireWorks";
+import { drawWavesOfSea } from "./drawWavesOfSea";
 
 
 const Work = () => {
@@ -21,6 +22,8 @@ const Work = () => {
             <Canvas draw={drawStarryNight}/>
             <br/>
             <Canvas draw={drawFireWorks}/>
+            <br/>
+            <Canvas draw={drawWavesOfSea}/>
         </div>
     )
 };
